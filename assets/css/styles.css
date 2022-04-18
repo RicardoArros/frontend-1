@@ -1,0 +1,162 @@
+/* VARIABLES CSS */
+
+:root {
+  /* Colors */
+  --first-color: #fff;
+
+  /* Font and typography */
+  --body-font: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* Spacing */
+  --padding-x-section: 2rem;
+  --padding-y-section: 4rem;
+  --padding-y-small: 2rem;
+}
+
+
+/* GLOBAL STYLES */
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 1.2rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-size: 1.2rem;
+
+  width: 100%;
+
+  padding: 1rem;
+
+  border-radius: 2rem;
+}
+
+textarea {
+  min-height: 12rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.4;
+}
+
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem var(--padding-x-section);
+}
+
+.header .header__logo .logo__img {
+  width: 18rem;
+}
+
+.header .header__nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header .header__nav ul li a {
+  font-size: 1.4rem;
+}
+
+.header .header__nav ul li a:hover {
+  color: chartreuse;
+}
+
+
+/* HOME */
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-image: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url(../img/hero-home.png)
+  ;
+
+  background-image: linear-gradient(to bottom right,
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url(../img/hero-home.png)
+  ;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 50rem;
+}
+
+.main {
+  padding: var(--padding-y-section) var(--padding-x-section);
+}
+
+.main .section-title {}
+
+
+
+/* FOOTER */
