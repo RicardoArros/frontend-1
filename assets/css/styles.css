@@ -21,6 +21,7 @@
 
   /* Border */
   --border-radius-card: 0.6rem;
+  --border-radius-btn: 2rem;
 }
 
 /* GLOBAL STYLES */
@@ -68,9 +69,13 @@ button {
   color: inherit;
 
   border: none;
+  border-radius: var(--border-radius-btn);
+
   outline: none;
 
   cursor: pointer;
+
+  padding: 1rem 1.6rem;
 }
 
 input,
@@ -81,11 +86,16 @@ textarea {
 
   padding: 1rem;
 
+  border: 1px solid var(--dark);
   border-radius: 2rem;
 }
 
 textarea {
   min-height: 12rem;
+}
+
+label {
+  font-size: 1.3rem;
 }
 
 h1,
@@ -212,13 +222,13 @@ p {
   height: 40rem;
 }
 
-.main .section-team {
+.section-team {
   display: flex;
   justify-content: space-evenly;
   gap: 2rem;
 }
 
-.main .section-team .team-member {
+.section-team .team-member {
   width: 26rem;
 
   padding: 1.6rem;
@@ -227,26 +237,26 @@ p {
   border-radius: var(--border-radius-card);
 }
 
-.main .section-team .team-member .team-member__img,
-.main .section-team .team-member .team-member__title,
-.main .section-team .team-member .team-member__subtitle {
+.section-team .team-member .team-member__img,
+.section-team .team-member .team-member__title,
+.section-team .team-member .team-member__subtitle {
   text-align: center;
 
   margin-bottom: 1.4rem;
 }
 
-.main .section-team .team-member .team-member__img img {
+.section-team .team-member .team-member__img img {
   width: 10rem;
   height: 10rem;
 
   border-radius: 50%;
 }
 
-.main .section-team .team-member .team-member__img h4 {
+.section-team .team-member .team-member__img h4 {
   font-size: 1.8rem;
 }
 
-.main .section-team .team-member .team-member__img h5 {
+.section-team .team-member .team-member__img h5 {
   font-size: 1.6rem;
 }
 
@@ -356,6 +366,55 @@ p {
   height: 40rem;
 }
 
+.section-contact {
+  display: flex;
+  justify-content: space-around;
+
+  gap: 4rem;
+}
+
+.section-contact > * {
+  flex-basis: 50%;
+}
+
+.form {
+  max-width: 60rem;
+}
+
+.form__two-input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.form__two-input-row > * {
+  flex-basis: 50%;
+}
+
+.form__single-input-row {
+  margin-bottom: 2rem;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__btn-submit {
+  text-align: center;
+}
+
+.form__btn-submit .btn__submit {
+  background-color: var(--primary-color);
+
+  width: 20rem;
+
+  color: var(--light);
+}
+
+
 /* FOOTER */
 
 .footer {
@@ -393,7 +452,7 @@ p {
   transform: translate(-50%, -50%);
 
   font-size: 3rem;
-  color: var(--light);
+  color: var(--primary-color);
 
   cursor: pointer;
 }
