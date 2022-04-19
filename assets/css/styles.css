@@ -379,6 +379,7 @@ p {
 
 .form {
   max-width: 60rem;
+  
 }
 
 .form__two-input-row {
@@ -452,7 +453,7 @@ p {
   transform: translate(-50%, -50%);
 
   font-size: 3rem;
-  color: var(--primary-color);
+  color: var(--light);
 
   cursor: pointer;
 }
